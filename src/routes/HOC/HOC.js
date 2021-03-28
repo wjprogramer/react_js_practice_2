@@ -6,6 +6,7 @@ import simple from './components/simple';
 import receiveParams from './components/receiveParams';
 import composition from './components/composition';
 // import decorator from './components/decorator';
+import example from './components/example';
 
 const HOC = () => {
   return (
@@ -24,6 +25,8 @@ const HOC = () => {
       <composition.UserList />
       <H3>Decorator</H3>
       <TextMuted>實驗中特性</TextMuted>
+      <H3>實際範例</H3>
+      <example.ProductPage />
     </>
   );
 }
