@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch } from 'react-router-dom';
+
+const rootPath = process.env.PUBLIC_URL;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={rootPath}>
+      <Switch>
+        <App />
+      </Switch>
+    </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );
