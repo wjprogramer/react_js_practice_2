@@ -7,6 +7,11 @@ const H4 = styled.h4``;
 const H5 = styled.h5``;
 const H6 = styled.h6``;
 
+const TextMuted = styled.span`
+  color: #aaa;
+`
+
 export {
   H1, H2, H3, H4, H5, H6,
+  TextMuted,
 }

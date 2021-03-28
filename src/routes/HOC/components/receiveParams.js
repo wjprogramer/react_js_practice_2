@@ -17,6 +17,5 @@ const BaseComp = (props) => {
 // 傳入參數並使用元件
 const Male =  UserGenderHOC('Male')(BaseComp);
 
-
 const result = { Male };
 export default result;

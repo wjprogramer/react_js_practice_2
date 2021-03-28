@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { H1, H2, H3 } from '../../components/';
+import { H1, H2, H3, TextMuted } from '../../components/';
 
 import simple from './components/simple';
 import receiveParams from './components/receiveParams';
 import composition from './components/composition';
+// import decorator from './components/decorator';
 
 const HOC = () => {
   return (
@@ -21,6 +22,8 @@ const HOC = () => {
       <receiveParams.Male />
       <H3>組合使用多個 HOC</H3>
       <composition.UserList />
+      <H3>Decorator</H3>
+      <TextMuted>實驗中特性</TextMuted>
     </>
   );
 }
