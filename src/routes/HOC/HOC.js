@@ -4,6 +4,7 @@ import { H1, H2, H3 } from '../../components/';
 
 import simple from './components/simple';
 import receiveParams from './components/receiveParams';
+import composition from './components/composition';
 
 const HOC = () => {
   return (
@@ -18,6 +19,8 @@ const HOC = () => {
       <H2>#2 HOC 的各種用法</H2>
       <H3>傳入參數</H3>
       <receiveParams.Male />
+      <H3>組合使用多個 HOC</H3>
+      <composition.UserList />
     </>
   );
 }
