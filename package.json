@@ -14,8 +14,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack serve",
+    "start:react-scripts": "react-scripts start",
     "build": "react-scripts build",
+    "build:webpack": "webpack build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,8 +40,24 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5"
+    "@emotion/styled": "^11.1.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
